@@ -23,7 +23,7 @@ app.use(express.static(`${__dirname}/public`));
 app.use(router);
 
 app.use('/masuk', (req, res) => {
-    res.status(200).send("App successful")
+    res.status(200).send("Heil Fuhrer")
 })
 
 app.use(apiErr.onLost);
