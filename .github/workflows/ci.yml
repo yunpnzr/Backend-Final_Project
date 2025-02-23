@@ -31,22 +31,22 @@ jobs:
     #- run: npm test
       env: 
         CI: true
-        DB_USERNAME: 
-        DB_PASSWORD: 
-        DB_NAME: 
-        DB_PORT: 
-        DB_HOST: 
-        PORT: 
-        NODE_ENV: 
-        SESSION_SECRET: 
-        JWT_SECRET: 
-        JWT_EXPIRED: 
-        REFRESH_TOKEN_EXPIRED: 
-        MAIL_HOST: 
-        MAIL_USER: 
-        MAIL_PASS: 
-        IMAGEKIT_PUBLIC_KEY: 
-        IMAGEKIT_PRIVATE_KEY: 
-        IMAGEKIT_URL: 
-        MIDTRANS_SERVER_KEY: 
-        MIDTRANS_CLIENT_KEY: 
+        DB_USERNAME: ${{secrets.DB_USERNAME}}
+        DB_PASSWORD: ${{secrets.DB_PASSWORD}}
+        DB_NAME: ${{secrets.DB_NAME}}
+        DB_PORT: ${{secrets.DB_PORT}}
+        DB_HOST: ${{secrets.DB_HOST}}
+        PORT: ${{secrets.PORT}}
+        NODE_ENV: ${{secrets.NODE_ENV}}
+        SESSION_SECRET: ${{secrets.SESSION_SECRET}}
+        JWT_SECRET: ${{secrets.JWT_SECRET}}
+        JWT_EXPIRED: ${{secrets.JWT_EXPIRED}}
+        REFRESH_TOKEN_EXPIRED: ${{secrets.REFRESH_TOKEN_EXPIRED}}
+        MAIL_HOST: ${{secrets.MAIL_HOST}}
+        MAIL_USER: ${{secrets.MAIL_USER}}
+        MAIL_PASS: ${{secrets.MAIL_PASS}}
+        IMAGEKIT_PUBLIC_KEY: ${{secrets.IMAGEKIT_PUBLIC_KEY}}
+        IMAGEKIT_PRIVATE_KEY: ${{secrets.IMAGEKIT_PRIVATE_KEY}}
+        IMAGEKIT_URL: ${{secrets.IMAGEKIT_URL}}
+        MIDTRANS_SERVER_KEY: ${{secrets.MIDTRANS_SERVER_KEY}}
+        MIDTRANS_CLIENT_KEY: ${{secrets.MIDTRANS_CLIENT_KEY}}
